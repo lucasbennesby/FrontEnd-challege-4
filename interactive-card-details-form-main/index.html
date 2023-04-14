@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/input.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!--width 1440px-->
+
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="gradient"></div>
+      <div class="card">
+        <div class="card-front">
+          <img
+            src="/interactive-card-details-form-main/images/bg-card-front.png"
+          />
+          <div class="card-info">
+            <h1 id="card-number">Numero do cartao</h1>
+            <div class="nome-data">
+              <p id="card-name">Nome da pessoa</p>
+              <p id="card-date">09/27</p>
+            </div>
+          </div>
+
+          <div class="card-logo">
+            <svg
+              width="84"
+              height="47"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <ellipse
+                cx="23.478"
+                cy="23.5"
+                rx="23.478"
+                ry="23.5"
+                fill="#fff"
+              />
+              <path
+                d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z"
+                stroke="#fff"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="card-back">
+          <img
+            src="/interactive-card-details-form-main/images/bg-card-back.png"
+          />
+          <p id="card-code">000</p>
+        </div>
+      </div>
+      <div class="formulario">
+        <form class="input-name">
+          <label for="name">Cardholder name</label><br />
+          <input type="text" id="name" oninput="InputName()" placeholder="Fulano de tal da silva" />
+        </form>
+        <form class="input-number">
+          <label for="number">Card Number</label><br />
+          <input type="text" id="number" oninput="InputNumber()" />
+        </form>
+        <div class="form-data">
+
+          <form class="input-date">
+          <label for="date">Exp. date (mm/yy)</label><br />
+          <input type="number" id="date" oninput="InputDate()" /> 
+
+          <form class="input-date">
+            <label for="date"></label>
+            <input type="number" id="date"  />
+        </div>
+        
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+input {
+  border: 0;
+  box-shadow: 0;
+}
+
+#name {
+  height: 4vh;
+  width: 50vh;
+  border: 2px solid hsl(280, 7%, 92%);
+  border-radius: 4px;
+  font-family: "Overpass Mono", monospace;
+  font-size: 16px;
+  align-self: initial;
+  margin-inline-start: -5px;
+  font-weight: bold;
+  font-size: 24px;
+}
+#name:focus {
+  border: 2px solid purple;
+  outline: #7a2fa4;
+}
+#number {
+  height: 4vh;
+  width: 50vh;
+  border: 2px solid hsl(280, 7%, 92%);
+  border-radius: 4px;
+  font-family: "Overpass Mono", monospace;
+  font-size: 16px;
+  align-self: initial;
+  margin-inline-start: -5px;
+  font-weight: bold;
+  font-size: 24px;
+}
+#number:focus {
+  border: 2px solid purple;
+  outline: #7a2fa4;
+}
+#date {
+  height: 4vh;
+  width: 10vh;
+  border: 2px solid hsl(280, 7%, 92%);
+  border-radius: 4px;
+  font-family: "Overpass Mono", monospace;
+  font-size: 16px;
+  align-self: initial;
+  margin-inline-start: -5px;
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 1vh;
+}
+#date:focus {
+  border: 2px solid purple;
+  outline: #7a2fa4;
+}
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-data {
+  width: 50vh;
+
+  display: flex;
+}
